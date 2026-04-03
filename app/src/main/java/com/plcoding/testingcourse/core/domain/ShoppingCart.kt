@@ -16,6 +16,7 @@ class ShoppingCart(
             repeat(quantity) {
                 items.add(product)
             }
+            // comment out this line after the test succeeds for mutation testing
             cache.saveCart(items)
         }
     }
