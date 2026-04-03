@@ -1,6 +1,5 @@
 package com.plcoding.testingcourse.part4.presentation
 
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
@@ -10,7 +9,7 @@ internal class BadProfileViewModelTest {
 
     @BeforeEach
     fun setUp() {
-        viewModel = BadProfileViewModel()
+        //viewModel = BadProfileViewModel()
     }
 
     @Test

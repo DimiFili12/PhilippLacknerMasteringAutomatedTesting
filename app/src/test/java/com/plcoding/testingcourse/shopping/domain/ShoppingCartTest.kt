@@ -17,7 +17,7 @@ internal class ShoppingCartTest {
 
     @BeforeEach
     fun setUp() {
-        cart = ShoppingCart()
+        //cart = ShoppingCart()
     }
 
     @ParameterizedTest
