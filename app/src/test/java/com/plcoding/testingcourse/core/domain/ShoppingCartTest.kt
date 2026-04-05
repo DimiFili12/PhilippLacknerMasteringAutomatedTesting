@@ -65,7 +65,7 @@ internal class ShoppingCartTest {
         val priceSum = cart.getTotalCost()
 
         // ASSERTION
-        assertThat(priceSum).isEqualTo(quantity * 5.0)
+        assertThat(priceSum).isEqualTo(expectedPriceSum)
     }
 
     @RepeatedTest(100)
