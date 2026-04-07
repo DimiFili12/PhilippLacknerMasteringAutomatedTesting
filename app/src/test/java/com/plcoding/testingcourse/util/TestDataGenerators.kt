@@ -3,7 +3,8 @@ package com.plcoding.testingcourse.util
 import com.plcoding.testingcourse.part7.domain.Post
 import com.plcoding.testingcourse.part7.domain.Profile
 import com.plcoding.testingcourse.part7.domain.User
-import io.mockk.InternalPlatformDsl.toStr
+import com.plcoding.testingcourse.part8.domain.ScheduledVideoCall
+import java.time.LocalDateTime
 import java.util.UUID
 
 fun user(): User {
@@ -29,5 +30,15 @@ fun profile(): Profile {
         posts = (1..10).map {
             post(user.id)
         }
+    )
+}
+
+fun scheduledVideoCall(
+    time: LocalDateTime
+): ScheduledVideoCall {
+    return ScheduledVideoCall(
+        title = UUID.randomUUID().toString(),
+        remoteUserId = UUID.randomUUID().toString(),
+        time = time
     )
 }
